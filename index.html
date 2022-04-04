@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Világóra</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="keret">
+        <h1>Világóra</h1>
+        <label for="vilag">Kérek válasz országot </label>
+        <select name="vilag" id="vilag" onchange="ora(this)">
+            <!-- <option value="">--- Válasz országot ---</option> -->
+            <optgroup label="USA">
+                <option value="New_York">New York</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Los_Angeles">Los Angeles</option>
+            </optgroup>
+            <optgroup label="Oroszország">
+                <option value="Moszkva">Moszkva</option>
+                <option value="Omszk">Omszk</option>
+                <option value="Vlagyivosztok">Vlagyivosztok</option>
+            </optgroup>
+            <optgroup label="Ausztrália">
+                <option value="Sydney">Sydney</option>
+                <option value="Alice_Springs">Alice Springs</option>
+                <option value="Perth">Perth</option>
+            </optgroup>
+        </select>
+        <p>Ennyi az ido a kiválasztott országban: <span id="ido"></span></p>
+    </div>
+    <script>
+        ora(document.getElementById("vilag"));
+    </script>
+</body>
+</html>

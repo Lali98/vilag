@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#000669, #000598, #0005c5, #0005ff, #282DFF, #4D51FF, #6F72FF);
+}
+
+#keret{
+    border: 1px solid black;
+    width: 50%;
+    padding: 30px;
+    background: white;
+    -webkit-box-shadow: 0 0 0 3px #262626, inset 0 10px 27px -8px #141414, inset 0 -10px 27px -8px #444444, inset 4px 6px 20px -3px rgba(0,0,0,0);
+    box-shadow: 0 0 0 3px #262626, inset 0 10px 27px -8px #141414, inset 0 -10px 27px -8px #444444, inset 4px 6px 20px -3px rgba(0,0,0,0);
+}
+
+select{
+    width: 30%;
+}
